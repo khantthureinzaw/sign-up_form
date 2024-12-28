@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign-up Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <section>
+        <div class="background-image">
+            <div class="logo-section">
+                <img src="odin-lined.png" alt="Odin Logo" class="logo">
+
+            </div>
+        </div>
+        <div class="form-container">
+            <div class="text">
+                <p class="tagline">This is not a real online service! You know you need something like this in your life
+                    to
+                    help you realize your deepest dreams. Sign up now to get started.<br>You <em>know</em>
+                    you want to.</p>
+            </div>
+            <form action="#">
+                <fieldset>
+                    <h2>Let's get started!</h2>
+                    <p class="input-group">
+                        <label for="firstname">FIRST NAME</label>
+                        <input type="text" name="firstname" id="firstname" required>
+                    </p>
+                    <p class="input-group">
+                        <label for="lastname">LAST NAME</label>
+                        <input type="text" name="lastname" id="lastname" required>
+                    </p>
+                    <p class="input-group">
+                        <label for="email">EMAIL</label>
+                        <input type="email" name="email" id="email" required>
+                    </p>
+                    <p class="input-group">
+                        <label for="phone">PHONE NUMBER</label>
+                        <input type="tel" name="phone" id="phone" placeholder="0123456789"
+                            pattern="[0-9]{10}|[0-9]{3}[ -.][0-9]{3}[ -.][0-9]{4}" required>
+                    </p>
+                    <p class="input-group">
+                        <label for="pwd">PASSWORD</label>
+                        <input type="password" name="password" id="pwd" required>
+                    </p>
+                    <p class="input-group">
+                        <label for="confirm-pwd">CONFIRM PASSWORD</label>
+                        <input type="password" name="confirm-password" id="confirm-pwd" required>
+                    </p>
+                </fieldset>
+
+                <button type="submit" class="submit-btn">Create Account</button>
+                <p>Already have an account? <a href="#">Log In</a></p>
+            </form>
+        </div>
+    </section>
+</body>
+
+</html>
